@@ -1,5 +1,4 @@
-
-/* RESET y base moderna */
+/* RESET y base moderna - PALETA MORADA */
 * {
     margin: 0;
     padding: 0;
@@ -7,11 +6,11 @@
 }
 
 body {
-    background: linear-gradient(145deg, #fef9e6 0%, #ffe6f0 100%);
+    background: linear-gradient(145deg, #f3e8ff 0%, #e9d5ff 100%);
     font-family: 'Inter', 'Quicksand', sans-serif;
     padding: 2rem 1.5rem;
     line-height: 1.4;
-    color: #1e1a2f;
+    color: #2e1a47;
 }
 
 /* contenedor principal del poster */
@@ -23,9 +22,9 @@ body {
     gap: 2rem;
 }
 
-/* hero moderno */
+/* hero moderno - degradado morado */
 .hero {
-    background: linear-gradient(135deg, #ffd166 0%, #ffb347 100%);
+    background: linear-gradient(135deg, #c084fc 0%, #9333ea 100%);
     border-radius: 2.5rem;
     padding: 2rem 2rem;
     display: flex;
@@ -33,7 +32,7 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 1.5rem;
-    box-shadow: 0 20px 35px -12px rgba(0,0,0,0.2);
+    box-shadow: 0 20px 35px -12px rgba(106, 13, 173, 0.3);
 }
 
 .hero-text {
@@ -42,7 +41,7 @@ body {
 }
 
 .etiqueta {
-    background: rgba(255,255,240,0.3);
+    background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(4px);
     display: inline-block;
     padding: 0.3rem 1rem;
@@ -50,7 +49,7 @@ body {
     font-size: 0.8rem;
     font-weight: 600;
     letter-spacing: 1px;
-    color: #3a2c1f;
+    color: #faf5ff;
     margin-bottom: 1rem;
 }
 
@@ -58,15 +57,15 @@ h1 {
     font-size: clamp(2.5rem, 8vw, 4.5rem);
     font-weight: 800;
     line-height: 1.2;
-    color: #2d1f00;
-    text-shadow: 2px 2px 10px rgba(255,210,90,0.6);
+    color: #faf5ff;
+    text-shadow: 2px 2px 12px rgba(88, 28, 135, 0.5);
     letter-spacing: -0.02em;
 }
 
 .linea-color {
     width: 80px;
     height: 5px;
-    background: #ff3b6f;
+    background: #fbbf24;
     border-radius: 10px;
     margin: 1rem 0 0.8rem 0;
 }
@@ -74,9 +73,9 @@ h1 {
 .subtitulo {
     font-size: 1.1rem;
     font-weight: 500;
-    color: #2c2b26;
+    color: #fef9ff;
     max-width: 550px;
-    background: rgba(255,250,210,0.4);
+    background: rgba(126, 34, 206, 0.35);
     padding: 0.5rem 1rem;
     border-radius: 30px;
 }
@@ -89,7 +88,7 @@ h1 {
 }
 
 .circulo-ovillo {
-    background: #fff0d4;
+    background: #f3e8ff;
     width: 110px;
     height: 110px;
     border-radius: 50%;
@@ -97,34 +96,34 @@ h1 {
     align-items: center;
     justify-content: center;
     font-size: 4rem;
-    color: #e67e22;
-    box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+    color: #a855f7;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
     transition: transform 0.2s ease;
 }
 
 .circulo-ovillo i {
-    filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.2));
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.15));
 }
 
 /* Tarjetas generales */
 .tarjeta {
-    background: rgba(255, 255, 245, 0.92);
+    background: rgba(255, 250, 255, 0.96);
     backdrop-filter: blur(0px);
     border-radius: 2rem;
     padding: 1.8rem 2rem;
-    box-shadow: 0 12px 25px -10px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255,215,150,0.6);
+    box-shadow: 0 12px 25px -10px rgba(107, 33, 168, 0.15);
+    border: 1px solid rgba(192, 132, 252, 0.4);
     transition: all 0.2s;
 }
 
 .tarjeta:hover {
     transform: translateY(-5px);
-    box-shadow: 0 22px 30px -12px rgba(0,0,0,0.15);
+    box-shadow: 0 22px 30px -12px rgba(107, 33, 168, 0.25);
 }
 
 .icono-tarjeta {
     font-size: 2.5rem;
-    color: #ff6b4a;
+    color: #b453ff;
     margin-bottom: 0.75rem;
 }
 
@@ -132,14 +131,14 @@ h1 {
     font-size: 1.7rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: #2c1a2e;
-    border-left: 6px solid #ff9f4a;
+    color: #4c1d95;
+    border-left: 6px solid #d8b4fe;
     padding-left: 1rem;
 }
 
 .tarjeta p {
     font-size: 1rem;
-    color: #2d2a35;
+    color: #3b2e4a;
     margin-bottom: 0.8rem;
     line-height: 1.45;
 }
@@ -154,26 +153,27 @@ h1 {
 }
 
 .lista-materiales li {
-    background: #fdf4e0;
+    background: #faf5ff;
     border-radius: 60px;
     padding: 0.6rem 1.2rem;
     display: inline-flex;
     align-items: center;
     gap: 12px;
     font-weight: 600;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.02);
-    border: 1px solid #ffe0b5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.02);
+    border: 1px solid #e9d5ff;
     font-size: 0.95rem;
+    color: #4c1d95;
 }
 
 .lista-materiales li i {
     font-size: 1.3rem;
-    color: #c45a2c;
+    color: #c084fc;
 }
 
 /* donacion: dirección destacada */
 .direccion {
-    background: #fff0dd;
+    background: #f5f0ff;
     padding: 1rem;
     border-radius: 1.5rem;
     display: flex;
@@ -181,32 +181,32 @@ h1 {
     align-items: flex-start;
     margin: 1rem 0;
     font-weight: 500;
-    border-left: 7px solid #ff8c42;
+    border-left: 7px solid #a855f7;
 }
 
 .direccion i {
     font-size: 1.8rem;
-    color: #dc5f2a;
+    color: #9333ea;
     margin-top: 3px;
 }
 
 .nota-gestion {
-    background: #e5f6e5;
+    background: #e9d5ff;
     border-radius: 50px;
     display: inline-block;
     padding: 0.6rem 1.2rem;
     margin-top: 0.8rem;
     font-size: 0.9rem;
     font-weight: 600;
-    color: #2c6e2c;
+    color: #6b21a5;
 }
 
-/* frase impacto */
+/* frase impacto - fondo morado oscuro elegante */
 .frase-impacto {
-    background: linear-gradient(120deg, #2b2d42, #1e2a38);
+    background: linear-gradient(120deg, #2e1065, #4c1d95);
     border-radius: 2rem;
     padding: 2rem;
-    color: #ffefcf;
+    color: #f3e8ff;
     text-align: center;
 }
 
@@ -217,7 +217,7 @@ h1 {
 
 .frase-impacto i {
     font-size: 2rem;
-    color: #ffb347;
+    color: #fbbf24;
     margin-bottom: 0.8rem;
     display: inline-block;
 }
@@ -231,27 +231,28 @@ h1 {
 
 /* compartir */
 .compartir {
-    background: #fffbf0;
+    background: #faf5ff;
     border-radius: 2rem;
     text-align: center;
     padding: 2rem;
-    border: 2px dashed #ffaa55;
+    border: 2px dashed #c084fc;
 }
 
 .icono-compartir {
     font-size: 3rem;
-    color: #ff6f3c;
+    color: #a855f7;
 }
 
 .compartir h3 {
     font-size: 1.9rem;
     font-weight: 800;
     margin: 0.4rem 0;
+    color: #4c1d95;
 }
 
 .compartir p {
     font-size: 1rem;
-    color: #4a3b2c;
+    color: #5b3e8c;
 }
 
 .redes-simbolo {
@@ -260,7 +261,7 @@ h1 {
     gap: 1.8rem;
     font-size: 2rem;
     margin: 1.5rem 0;
-    color: #ff7e45;
+    color: #b453ff;
 }
 
 .redes-simbolo i {
@@ -270,28 +271,28 @@ h1 {
 
 .redes-simbolo i:hover {
     transform: scale(1.1);
-    color: #e63946;
+    color: #f59e0b;
 }
 
 .mensaje-final {
-    background: #ffecd6;
+    background: #e9d5ff;
     border-radius: 60px;
     padding: 0.7rem;
     font-weight: bold;
     font-size: 1.1rem;
     width: fit-content;
     margin: 0 auto;
-    color: #b64926;
+    color: #7e22ce;
 }
 
 /* footer */
 .footer-poster {
     text-align: center;
     font-size: 0.75rem;
-    color: #8f7a66;
+    color: #906fc2;
     margin-top: 0.5rem;
     padding: 1rem;
-    border-top: 1px solid #fad5a5;
+    border-top: 1px solid #d8b4fe;
 }
 
 /* 100% responsive: ajustes para móviles */
