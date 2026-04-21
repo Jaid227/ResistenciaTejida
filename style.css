@@ -1,0 +1,364 @@
+
+/* RESET y base moderna */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(145deg, #fef9e6 0%, #ffe6f0 100%);
+    font-family: 'Inter', 'Quicksand', sans-serif;
+    padding: 2rem 1.5rem;
+    line-height: 1.4;
+    color: #1e1a2f;
+}
+
+/* contenedor principal del poster */
+.poster {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* hero moderno */
+.hero {
+    background: linear-gradient(135deg, #ffd166 0%, #ffb347 100%);
+    border-radius: 2.5rem;
+    padding: 2rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    box-shadow: 0 20px 35px -12px rgba(0,0,0,0.2);
+}
+
+.hero-text {
+    flex: 2;
+    min-width: 220px;
+}
+
+.etiqueta {
+    background: rgba(255,255,240,0.3);
+    backdrop-filter: blur(4px);
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    border-radius: 40px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #3a2c1f;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    font-weight: 800;
+    line-height: 1.2;
+    color: #2d1f00;
+    text-shadow: 2px 2px 10px rgba(255,210,90,0.6);
+    letter-spacing: -0.02em;
+}
+
+.linea-color {
+    width: 80px;
+    height: 5px;
+    background: #ff3b6f;
+    border-radius: 10px;
+    margin: 1rem 0 0.8rem 0;
+}
+
+.subtitulo {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #2c2b26;
+    max-width: 550px;
+    background: rgba(255,250,210,0.4);
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+}
+
+.hero-deco {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circulo-ovillo {
+    background: #fff0d4;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: #e67e22;
+    box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.circulo-ovillo i {
+    filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.2));
+}
+
+/* Tarjetas generales */
+.tarjeta {
+    background: rgba(255, 255, 245, 0.92);
+    backdrop-filter: blur(0px);
+    border-radius: 2rem;
+    padding: 1.8rem 2rem;
+    box-shadow: 0 12px 25px -10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255,215,150,0.6);
+    transition: all 0.2s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 22px 30px -12px rgba(0,0,0,0.15);
+}
+
+.icono-tarjeta {
+    font-size: 2.5rem;
+    color: #ff6b4a;
+    margin-bottom: 0.75rem;
+}
+
+.tarjeta h2 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #2c1a2e;
+    border-left: 6px solid #ff9f4a;
+    padding-left: 1rem;
+}
+
+.tarjeta p {
+    font-size: 1rem;
+    color: #2d2a35;
+    margin-bottom: 0.8rem;
+    line-height: 1.45;
+}
+
+/* lista de materiales */
+.lista-materiales {
+    list-style: none;
+    margin-top: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.lista-materiales li {
+    background: #fdf4e0;
+    border-radius: 60px;
+    padding: 0.6rem 1.2rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.02);
+    border: 1px solid #ffe0b5;
+    font-size: 0.95rem;
+}
+
+.lista-materiales li i {
+    font-size: 1.3rem;
+    color: #c45a2c;
+}
+
+/* donacion: dirección destacada */
+.direccion {
+    background: #fff0dd;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    margin: 1rem 0;
+    font-weight: 500;
+    border-left: 7px solid #ff8c42;
+}
+
+.direccion i {
+    font-size: 1.8rem;
+    color: #dc5f2a;
+    margin-top: 3px;
+}
+
+.nota-gestion {
+    background: #e5f6e5;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    margin-top: 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #2c6e2c;
+}
+
+/* frase impacto */
+.frase-impacto {
+    background: linear-gradient(120deg, #2b2d42, #1e2a38);
+    border-radius: 2rem;
+    padding: 2rem;
+    color: #ffefcf;
+    text-align: center;
+}
+
+.frase-inner {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.frase-impacto i {
+    font-size: 2rem;
+    color: #ffb347;
+    margin-bottom: 0.8rem;
+    display: inline-block;
+}
+
+.frase-impacto p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.4;
+    font-style: italic;
+}
+
+/* compartir */
+.compartir {
+    background: #fffbf0;
+    border-radius: 2rem;
+    text-align: center;
+    padding: 2rem;
+    border: 2px dashed #ffaa55;
+}
+
+.icono-compartir {
+    font-size: 3rem;
+    color: #ff6f3c;
+}
+
+.compartir h3 {
+    font-size: 1.9rem;
+    font-weight: 800;
+    margin: 0.4rem 0;
+}
+
+.compartir p {
+    font-size: 1rem;
+    color: #4a3b2c;
+}
+
+.redes-simbolo {
+    display: flex;
+    justify-content: center;
+    gap: 1.8rem;
+    font-size: 2rem;
+    margin: 1.5rem 0;
+    color: #ff7e45;
+}
+
+.redes-simbolo i {
+    transition: transform 0.2s, color 0.2s;
+    cursor: default;
+}
+
+.redes-simbolo i:hover {
+    transform: scale(1.1);
+    color: #e63946;
+}
+
+.mensaje-final {
+    background: #ffecd6;
+    border-radius: 60px;
+    padding: 0.7rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: fit-content;
+    margin: 0 auto;
+    color: #b64926;
+}
+
+/* footer */
+.footer-poster {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #8f7a66;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    border-top: 1px solid #fad5a5;
+}
+
+/* 100% responsive: ajustes para móviles */
+@media (max-width: 780px) {
+    body {
+        padding: 1rem;
+    }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.8rem;
+    }
+    .linea-color {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .subtitulo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .tarjeta {
+        padding: 1.4rem;
+    }
+    .tarjeta h2 {
+        font-size: 1.5rem;
+    }
+    .lista-materiales {
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+    .lista-materiales li {
+        justify-content: flex-start;
+    }
+    .frase-impacto p {
+        font-size: 1.1rem;
+    }
+    .compartir h3 {
+        font-size: 1.6rem;
+    }
+    .direccion {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .etiqueta {
+        font-size: 0.7rem;
+    }
+    .icono-tarjeta {
+        font-size: 2rem;
+    }
+    .redes-simbolo {
+        gap: 1rem;
+        font-size: 1.6rem;
+    }
+    .nota-gestion {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .circulo-ovillo {
+        width: 80px;
+        height: 80px;
+        font-size: 3rem;
+    }
+}
